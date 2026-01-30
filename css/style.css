@@ -1,17 +1,59 @@
 @import "./reset.css";
 
 @font-face {
-  font-family: "norseregular";
-  src: url("norse-webfont.woff2") format("woff2"),
-    url("norse-webfont.woff") format("woff");
+  font-family: norse;
+  src: url("../assets/fonts/norse-webfont.woff2") format("woff2"),
+    url("../assets/fonts/norse-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "norsebold";
-  src: url("norsebold-webfont.woff2") format("woff2"),
-    url("norsebold-webfont.woff") format("woff");
-  font-weight: normal;
+  font-family: norse;
+  src: url("../assets/fonts/norsebold-webfont.woff2") format("woff2"),
+    url("../assets/fonts/norsebold-webfont.woff") format("woff");
+  font-weight: bold;
   font-style: normal;
+}
+
+body {
+  display: flex;
+  align-items: center;
+}
+
+header.hero {
+  width: auto;
+  position: relative;
+  h1 {
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-color: #0005;
+    font-family: norse, fantasy;
+    font-size: 6rem;
+    font-weight: bold;
+    position: absolute;
+    top: 20%;
+    img {
+      display: inline-block;
+      vertical-align: middle;
+      width: 120px;
+      height: auto;
+    }
+  }
+  img {
+    height: 100vh;
+    width: auto;
+  }
+  & .credits {
+    --text-color: #e1e1e1;
+    position: absolute;
+    bottom: 2%;
+    color: var(--text-color);
+    text-align: center;
+    width: 100%;
+    a {
+      color: var(--text-color);
+    }
+  }
 }
