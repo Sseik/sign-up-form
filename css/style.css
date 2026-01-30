@@ -19,9 +19,12 @@
 body {
   display: flex;
   align-items: center;
+  height: 100vh;
 }
 
 header.hero {
+  flex-shrink: 0;
+  height: 100%;
   width: auto;
   position: relative;
   h1 {
@@ -41,9 +44,8 @@ header.hero {
       height: auto;
     }
   }
-  img {
+  > img {
     height: 100vh;
-    width: auto;
   }
   & .credits {
     --text-color: #e1e1e1;
@@ -55,5 +57,15 @@ header.hero {
     a {
       color: var(--text-color);
     }
+  }
+}
+
+main.container {
+  font-family: sans-serif;
+  p {
+    margin-left: 48px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    width: 80%;
   }
 }
