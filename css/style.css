@@ -84,6 +84,7 @@ main.container {
       padding: 16px 0 32px 48px;
       background-color: white;
       gap: 5%;
+      row-gap: 16px;
       h2 {
         margin-bottom: 16px;
         flex: 0 0 100%;
@@ -92,9 +93,6 @@ main.container {
         display: flex;
         flex-direction: column;
         flex: 0 0 35%;
-        + .input-container {
-            margin-top: 12px;
-        }
         label {
           text-transform: uppercase;
           font-family: "Courier New", Courier, monospace;
