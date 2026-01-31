@@ -132,6 +132,16 @@ main.container {
         padding: 14px 56px;
         font-weight: bold;
         font-size: 1.125rem;
+        box-shadow: 4px 4px 4px var(--light-grey);
     }
   }
+}
+
+.alternative {
+    margin-left: 48px;
+    a {
+        text-decoration: none;
+        color: var(--dark-green);
+        font-weight: bold;
+    }
 }
