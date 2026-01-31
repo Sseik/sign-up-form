@@ -102,6 +102,7 @@ main.container {
         label {
           text-transform: uppercase;
           font-family: "Courier New", Courier, monospace;
+          font-size: 0.875rem;
         }
         input[type="text"],
         input[type="tel"],
@@ -111,6 +112,7 @@ main.container {
           outline: none;
           border: 1px solid var(--light-grey);
           border-radius: 6px;
+          padding: 6px 12px;
           &:invalid {
             border: 1px solid red;
           }
