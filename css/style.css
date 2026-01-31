@@ -89,6 +89,7 @@ main.container {
       background-color: white;
       gap: 5%;
       row-gap: 16px;
+      box-shadow: 0 4px 8px var(--light-grey);
       h2 {
         margin-bottom: 16px;
         flex: 0 0 100%;
