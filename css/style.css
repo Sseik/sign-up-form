@@ -18,6 +18,7 @@
 
 :root {
   --light-grey: #e1e1e1;
+  --dark-green: #596d48
 }
 
 body {
@@ -119,6 +120,16 @@ main.container {
           }
         }
       }
+    }
+    button {
+        margin: 48px;
+        color: white;
+        border: none;
+        background-color: var(--dark-green);
+        border-radius: 8px;
+        padding: 14px 56px;
+        font-weight: bold;
+        font-size: 1.125rem;
     }
   }
 }
