@@ -18,7 +18,7 @@
 
 :root {
   --light-grey: #e1e1e1;
-  --dark-green: #596d48
+  --dark-green: #596d48;
 }
 
 body {
@@ -124,24 +124,70 @@ main.container {
       }
     }
     button {
-        margin: 48px;
-        color: white;
-        border: none;
-        background-color: var(--dark-green);
-        border-radius: 8px;
-        padding: 14px 56px;
-        font-weight: bold;
-        font-size: 1.125rem;
-        box-shadow: 4px 4px 4px var(--light-grey);
+      margin: 48px;
+      color: white;
+      border: none;
+      background-color: var(--dark-green);
+      border-radius: 8px;
+      padding: 14px 56px;
+      font-weight: bold;
+      font-size: 1.125rem;
+      box-shadow: 4px 4px 4px var(--light-grey);
     }
   }
 }
 
 .alternative {
-    margin-left: 48px;
-    a {
-        text-decoration: none;
-        color: var(--dark-green);
-        font-weight: bold;
+  margin-left: 48px;
+  a {
+    text-decoration: none;
+    color: var(--dark-green);
+    font-weight: bold;
+  }
+}
+
+@media (max-width: 60rem) or (orientation: portrait) {
+  body {
+    flex-direction: column;
+    height: auto;
+  }
+  header.hero {
+    height: 160px;
+    width: 100%;
+    overflow: hidden;
+    > img {
+      width: 100%;
+      object-fit: cover;
     }
+    h1 {
+      top: 0;
+    }
+    .credits {
+      display: none;
+    }
+  }
+  main.container {
+    height: auto;
+    p {
+      font-size: 0.875em;
+      width: auto;
+      margin: 16px;
+    }
+    form {
+      margin-top: 8px;
+      & .card {
+        padding: 8px;
+        .input-container {
+          flex-basis: 100%;
+        }
+      }
+      button {
+        display: block;
+        margin: 8px auto;
+      }
+    }
+    & .alternative {
+      margin: auto;
+    }
+  }
 }
