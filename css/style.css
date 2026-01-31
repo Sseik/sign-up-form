@@ -16,6 +16,10 @@
   font-style: normal;
 }
 
+:root {
+  --light-grey: #e1e1e1;
+}
+
 body {
   display: flex;
   align-items: center;
@@ -48,7 +52,7 @@ header.hero {
     height: 100vh;
   }
   & .credits {
-    --text-color: #e1e1e1;
+    --text-color: var(--light-grey);
     position: absolute;
     bottom: 2%;
     color: var(--text-color);
@@ -96,6 +100,22 @@ main.container {
         label {
           text-transform: uppercase;
           font-family: "Courier New", Courier, monospace;
+        }
+        input[type="text"],
+        input[type="tel"],
+        input[type="email"],
+        input[type="password"] {
+          appearance: none;
+          outline: none;
+          border: 1px solid var(--light-grey);
+          border-radius: 6px;
+          &:invalid {
+            border: 1px solid red;
+          }
+          &:focus {
+            border: 1px solid blue;
+            box-shadow: 4px 4px 4px var(--light-grey);
+          }
         }
       }
     }

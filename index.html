@@ -44,23 +44,44 @@
           <h2>Let's do this!</h2>
           <div class="input-container">
             <label for="first-name">First name</label>
-            <input type="text" name="firstName" id="first-name" />
+            <input
+              type="text"
+              name="firstName"
+              id="first-name"
+              autocomplete="given-name"
+            />
           </div>
           <div class="input-container">
             <label for="last-name">Last name</label>
-            <input type="text" name="lastName" id="last-name" />
+            <input
+              type="text"
+              name="lastName"
+              id="last-name"
+              autocomplete="family-name"
+            />
           </div>
           <div class="input-container">
             <label for="email">Email</label>
-            <input type="email" name="email" id="email" />
+            <input type="email" name="email" id="email" autocomplete="email" />
           </div>
           <div class="input-container">
             <label for="phone-number">Phone number</label>
-            <input type="tel" name="phoneNumber" id="phone-number" />
+            <input
+              type="tel"
+              name="phoneNumber"
+              id="phone-number"
+              autocomplete="tel"
+            />
           </div>
           <div class="input-container">
             <label for="password">Password</label>
-            <input type="password" name="password" id="password" />
+            <input
+              type="password"
+              name="password"
+              id="password"
+              required
+              autocomplete="new-password"
+            />
           </div>
           <div class="input-container">
             <label for="password-confirmation">Confirm password</label>
@@ -68,6 +89,7 @@
               type="password"
               name="passwordConfirmation"
               id="password-confirmation"
+              required
             />
           </div>
         </div>
